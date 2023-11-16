@@ -1,0 +1,9 @@
+SELECT m.first_name, m.last_name, m.nim, id, nama nip,bidang
+FROM mahasiswa as m 
+INNER JOIN DOSEN as mk
+ON m.id_DOSEN = mk.id;
+
+SELECT d.kode_dosen, d.nama_lengkap, mk.kode_matakuliah, mk.nama_mata_kuliah
+FROM dosen as d
+INNER JOIN mata_kuliahas mk
+ON d.id_matkul = mk.id;
