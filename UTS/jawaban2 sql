@@ -1,0 +1,18 @@
+INSERT INTO mahasiswa (id, nama, nim, fakultas, prodi) VALUES
+('1', 'Adan', '20220801123', 'Ilmu Komputer', 'Teknik Informatika'),
+('2', 'Edrik', '20220801345', 'Ilmu Komputer', 'Teknik Informatika'),
+('3', 'olan', '20220801230', 'Ilmu Komputer', 'Teknik Informatika'),
+('4', 'aryo', '202208012721', 'Ilmu Komputer', 'Teknik Informatika'),
+('5', 'pramuja', '20220801276', 'Ilmu Komputer', 'Teknik Informatika');
+
+INSERT INTO dosen (id, nama, nip, bidang) VALUES
+('1', 'bayu', '220801212', 'basis data'),
+('2', 'bebi', '210801200', 'rekayasa perangkat lunak'),
+('3', 'pramuja', '20080110', 'sistem operasi'),
+('4', 'rauf', '20080112', 'kalkulus');
+
+INSERT INTO mata_kuliah (kode_mata_kuliah, nama_mata_kuliah, sks, semester, deskripsi) VALUES
+('CROO1', 'SISTEM OPERASI', 3, 3, 'LULUS'),
+('CROO2', 'BASIS DATA', 3, 3, 'LULUS'),
+('CROO3', 'KALKULUS', 3, 3, 'LULUS'),
+('CROO4', 'REKAYASA PERANGKAT LUNAK', 3, 3, 'LULUS');
