@@ -9,3 +9,22 @@ MATA_kuliah
 SELECT*
 FROM
 DOSEN
+
+SELECT
+    mahasiswa.nama AS nama_mahasiswa,
+    mahasiswa.nim,
+    mahasiswa.fakultas,
+    mahasiswa.prodi,
+    mata_kuliah.kode_mata_kuliah,
+    mata_kuliah.nama_mata_kuliah,
+    mata_kuliah.sks,
+    mata_kuliah.semester,
+    dosen.nama AS nama_dosen,
+    nilai.nilai,
+    'LULUS' AS deskripsi_lulus  -- Menambahkan deskripsi 'LULUS' ke hasil query
+
+FROM
+    nilai
+JOIN mahasiswa ON nilai.mahasiswa_id = mahasiswa.id
+JOIN mata_kuliah ON nilai.mata_kuliah_id = mata_kuliah.id
+JOIN dosen ON mata_kuliah.dosen_id = dosen.id;
